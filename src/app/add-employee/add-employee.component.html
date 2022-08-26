@@ -1,0 +1,23 @@
+<body>
+  <div class="container">
+    <h3>Register</h3>
+
+    <input type="text" placeholder="Id" [(ngModel)]="id" /><br /><br />
+    <input type="text" placeholder="Name" [(ngModel)]="name" /><br /><br />
+    Date of Birth: <input type="date" [(ngModel)]="dob" /><br /><br />
+    <input type="text" placeholder="Email Id" [(ngModel)]="emailId" /><br /><br />
+    <input type="text" placeholder="Department" [(ngModel)]="dept" /><br /><br />
+    Date of Joining: <input type="date" [(ngModel)]="doj" /><br /><br />
+    <input type="text" placeholder="Location" [(ngModel)]="loc" /><br /><br />
+    Employement Type: 
+    <select  [(ngModel)]="type">
+      <option id="0">INTERN</option>
+      <option id="1">TEMPORARY</option>
+      <option id="2">PROBATION</option>
+      <option id="3">PERMANENT</option>
+    </select>
+    <br /><br />
+
+    <button class="btn btn-primary" (click)="AddEmployee()">Add Employee</button>
+  </div>
+</body>

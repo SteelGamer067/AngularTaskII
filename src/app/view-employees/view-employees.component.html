@@ -1,0 +1,32 @@
+<body>
+  <div>
+    <h3>Employees List</h3>
+    <table border="1">
+      <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Date of Birth</th>
+        <th>EmailId</th>
+        <th>Department</th>
+        <th>Date of Joining</th>
+        <th>Location</th>
+        <th>Employement Type</th>
+        <th>Actions</th>
+      </tr>
+      <tr *ngFor="let emp of employees">
+        <td>{{ emp.id }}</td>
+        <td>{{ emp.name }}</td>
+        <td>{{ emp.dob }}</td>
+        <td>{{ emp.emailId }}</td>
+        <td>{{ emp.dept }}</td>
+        <td>{{ emp.doj }}</td>
+        <td>{{ emp.loc }}</td>
+        <td>{{ emp.type }}</td>
+        <td>
+          <a class="btn btn-info" data-toggle="tooltip" title="Update Details" (click)="UpdateDetails(emp.id)"><i class="fa-solid fa-pen"></i></a>
+          <a class="btn btn-info" data-toggle="tooltip" title="Delete" (click)="DeleteEmployee(emp.id)"><i class="fa-solid fa-trash"></i></a>
+        </td>
+      </tr>
+    </table>
+  </div>
+</body>

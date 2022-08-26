@@ -1,0 +1,19 @@
+table{
+    margin: 0 auto;
+    width: 70%;
+    border: double;
+}
+
+th {
+  text-align: center;
+  border: solid;
+}
+
+td{
+    text-align: center;
+    border: dotted;
+}
+
+a{
+    margin: 5px;
+}

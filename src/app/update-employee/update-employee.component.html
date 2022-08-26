@@ -1,0 +1,21 @@
+<body>
+  <div>
+    Id: {{ id }} <br />
+    Name: {{ name }} <br />
+    Date of Birth: {{ dob }} <br />
+    EmailId: <input type="text" [(ngModel)]="emailId" /><br />
+    Department: <input type="text" [(ngModel)]="dept" /><br />
+    Date of Joining: {{ doj }} <br />
+    Location: <input type="text" [(ngModel)]="loc" /><br />
+    Employement Type:
+    <select [(ngModel)]="type">
+      <option id="0">INTERN</option>
+      <option id="1">TEMPORARY</option>
+      <option id="2">PROBATION</option>
+      <option id="3">PERMANENT</option>
+    </select>
+    <br /><br />
+
+    <button (click)="UpdateEmployee()">Update Employee</button>
+  </div>
+</body>
